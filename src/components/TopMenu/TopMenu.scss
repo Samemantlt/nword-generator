@@ -1,0 +1,34 @@
+$top-menu-height: 272px;
+
+
+.top-menu {
+  display: flex;
+  justify-content: space-around;
+
+  $padding-top: 107px;
+  $padding-bottom: 107px;
+
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom; // TODO: Calc it
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  height: $top-menu-height - $padding-bottom - $padding-top;
+
+  div.menu-item > a {
+    color: gray;
+    text-decoration: none;
+    transition: color ease 500ms, font-size ease 500ms;
+    width: auto;
+    &.active {
+      font-size: 58px;
+      color: white;
+
+      &#result-page-top-meu-item{
+
+      }
+    }
+  }
+}

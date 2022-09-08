@@ -1,0 +1,35 @@
+@import "src/components/TopMenu/TopMenu";
+
+.result-page {
+  text-align: center;
+  &-item{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 78px;
+  }
+}
+
+.empty-result-text-container {
+  position: relative;
+
+  width: 100%;
+
+  $padding-bottom: 100px;
+  padding-bottom: $padding-bottom;
+  height: calc(100vh - #{$top-menu-height} - #{$padding-bottom});
+
+  & > .empty-result-text {
+    height: 100%;
+    margin: auto;
+    width: max-content;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 58px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.2);
+  }
+}

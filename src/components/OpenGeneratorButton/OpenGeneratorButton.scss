@@ -1,0 +1,22 @@
+.generator-button{
+  width: 427px;
+  height: 79px;
+  border: none;
+  color: #2D2D2D;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  transition: color ease 200ms, background-color ease 200ms;
+}
+
+.generator-button:hover {
+  color: #fff;
+  background-color: #1f1f1f;
+  border: none;
+}
+
+.generator-button:active {
+  color: #fff;
+  background-color: #181818;
+  border: none;
+}
