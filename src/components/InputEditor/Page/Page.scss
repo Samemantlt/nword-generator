@@ -1,0 +1,67 @@
+@import "../Header/Header";
+@import "../Page/Input/Input";
+
+.input-editor-page-container {
+}
+
+.input-editor-page {
+  position: relative;
+  text-align: left;
+  height: calc(100% - #{$input-editor-header-height});
+
+  .list {
+    padding: 10px 0 0;
+
+    .list-element {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      margin-top: 35px;
+      margin-left: 83px;
+    }
+  }
+
+  &-add-input {
+    $width: 455px;
+    $height: 72px;
+
+    @include add-value-input(455px, 72px);
+
+    position: absolute;
+    bottom: 140px;
+    left: calc((100% - #{$width}) / 2);
+
+    input {
+    }
+  }
+
+  &-add-button {
+    $width: 264px;
+    $height: 50px;
+
+    position: absolute;
+
+    width: $width;
+    height: $height;
+
+    left: calc((100% - #{$width}) / 2);
+    bottom: 59px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    border: 0;
+
+    background: #2D2D2D;
+    transition: background-color ease 200ms;
+
+    color: white;
+
+    &:hover{
+      background-color: black;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+
+$input-editor-header-height: 138px;
+
+.input-editor-header {
+  height: $input-editor-header-height;
+  width: 100%;
+
+  &-close {
+    position: absolute;
+    top: 44px;
+    right: 41px;
+    width: 21px;
+    height: 21px;
+  }
+
+  &-title {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 23px;
+  }
+
+  &-menu {
+    &-item {
+      display: inline-block;
+      background-color: white;
+      width: calc(100% / 3);
+      height: 35px;
+
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 36px;
+
+      &.selected {
+        background-color: #EFEFEF;
+      }
+    }
+  }
+}

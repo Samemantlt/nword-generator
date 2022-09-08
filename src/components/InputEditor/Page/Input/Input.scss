@@ -1,0 +1,49 @@
+
+
+@mixin add-value-input($width, $height){
+  $button-width: 69px;
+  $height: 72px;
+  $padding-top: 8px;
+  $padding-left: 12px;
+  $button-margin-left: 12px;
+
+  display: flex;
+  width: $width - $padding-left * 2;
+  height: $height - $padding-top * 2;
+  padding: $padding-top $padding-left;
+
+  box-shadow: 0 4px 14px 5px rgba(0, 0, 0, 0.15);
+
+  background-color: white;
+  input{
+    width: $width - $button-width - $button-margin-left;
+
+    border: 1px solid #000000;
+
+    padding-left: 17px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .submit-button{
+    margin-left: $button-margin-left;
+    width: #{$button-width};
+
+    div{
+      text-align: center;
+      img{
+        $img-width: 10px;
+        position: relative;
+        top: ($height - $padding-top * 2) / 2 - $img-width;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+.default-add-input{
+  @include add-value-input(455px, 72px)
+}
